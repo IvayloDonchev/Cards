@@ -54,8 +54,7 @@ namespace Cards
 
         private bool IsCardAlreadyDealt(Suit suit, Value value)
         {
-            // TODO: return true if this card has already been dealt   
-            throw new NotImplementedException("IsCardAlreadyDealt - TBD");
+            return (this.cardPack[(int)suit, (int)value] == null);
         }
     }
 }
